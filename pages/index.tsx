@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { HomeView } from '@/components/organisms/HomePage/HomeView';
+
 const LandingPage: React.FC = ({}) => {
-  return <div></div>;
+  return <HomeView />;
 };
 
 export default LandingPage;

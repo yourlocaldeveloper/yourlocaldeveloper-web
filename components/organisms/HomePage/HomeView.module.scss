@@ -1,0 +1,24 @@
+.homeView {
+  background-color: #222222;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    color: #95a3b3;
+    font-size: 30px;
+  }
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 400;
+  color: #84dcc6;
+}
+
+.headingContainer {
+  width: 1000px;
+}
