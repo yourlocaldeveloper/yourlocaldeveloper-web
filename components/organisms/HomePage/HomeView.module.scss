@@ -1,8 +1,9 @@
+@use '@/styles/breakpoints' as *;
 @use '@/styles/colors' as *;
 
 .homeView {
   background-color: $light-green;
-  height: 100vh;
+  height: calc(100vh - 50px);
   width: 100vw;
   display: flex;
   align-items: center;
@@ -10,8 +11,8 @@
 }
 
 .homeViewContainer {
-  height: 100vh;
-  max-width: 1500px;
+  height: 100%;
+  max-width: $max-width;
   display: flex;
   align-items: center;
   justify-content: space-around;

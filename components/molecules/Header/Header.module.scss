@@ -1,0 +1,57 @@
+@use '@/styles/breakpoints' as *;
+@use '@/styles/colors' as *;
+
+.header {
+  background-color: $dark-green;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 50px;
+}
+
+.headerContainer {
+  display: flex;
+  width: $max-width;
+  max-width: $max-width;
+  height: 50px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  margin-right: auto;
+  order: 0;
+}
+
+.logo {
+  border-right: 1px solid $black;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.languageContainer {
+  padding-left: 25px;
+  border-left: 1px solid $black;
+}
+
+.languageSelector {
+  background-color: transparent;
+  border: none;
+}
+
+.languageSelector-selected {
+  background-color: transparent;
+}
+
+.languageSelector-options {
+  li {
+    background-color: transparent;
+  }
+}
