@@ -11,6 +11,8 @@
 
 .headerContainer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: $max-width;
   max-width: $max-width;
   height: 50px;
@@ -19,10 +21,7 @@
 .logoContainer {
   display: flex;
   align-items: center;
-  width: 250px;
   height: 50px;
-  margin-right: auto;
-  order: 0;
 }
 
 .logo {
@@ -44,14 +43,4 @@
 .languageSelector {
   background-color: transparent;
   border: none;
-}
-
-.languageSelector-selected {
-  background-color: transparent;
-}
-
-.languageSelector-options {
-  li {
-    background-color: transparent;
-  }
 }

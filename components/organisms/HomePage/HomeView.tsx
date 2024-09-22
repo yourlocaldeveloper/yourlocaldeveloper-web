@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import { Heading } from '@/components/atoms/Heading';
 
+import blob from '@/app/blob.svg';
 import wool from '@/app/wool.png';
 import styles from './HomeView.module.scss';
 
@@ -24,7 +25,15 @@ export const HomeView: React.FC = ({}) => {
           </Heading>
         </div>
         <div className={styles.rightContainer}>
-          <Image src={wool} width={300} alt={'A wool version of me'}></Image>
+          <Image
+            className={styles.wool}
+            src={wool}
+            width={300}
+            alt={'A wool version of me'}
+          />
+          <div className={styles.blobOne}>
+            <Image src={blob} width={500} alt={'A blob'} />
+          </div>
         </div>
       </div>
     </div>

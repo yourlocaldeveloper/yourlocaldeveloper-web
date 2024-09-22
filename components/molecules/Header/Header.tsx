@@ -22,12 +22,12 @@ export const Header: React.FC = () => {
           <HeaderButton text={'Projects'} />
           <HeaderButton text={'Contact'} />
           <HeaderButton text={'My CV'} />
-          <div className={styles.languageContainer}>
-            <select className={styles.languageSelector}>
-              <option value='EN'>EN</option>
-              <option value='LT'>LT</option>
-            </select>
-          </div>
+        </div>
+        <div className={styles.languageContainer}>
+          <select className={styles.languageSelector}>
+            <option value='EN'>EN</option>
+            <option value='LT'>LT</option>
+          </select>
         </div>
       </div>
     </div>

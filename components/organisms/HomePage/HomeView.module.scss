@@ -25,6 +25,7 @@
 }
 
 .rightContainer {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -32,4 +33,13 @@
 .highlight {
   color: $brown;
   font-weight: 600;
+}
+
+.wool {
+  z-index: 3;
+}
+
+.blobOne {
+  position: absolute;
+  z-index: 2;
 }
