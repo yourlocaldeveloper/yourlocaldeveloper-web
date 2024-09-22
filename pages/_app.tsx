@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app';
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
-  weight: ['400', '800'],
+  weight: ['200', '400', '600', '800'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
 });

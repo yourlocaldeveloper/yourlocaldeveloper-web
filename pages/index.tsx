@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { HomeView } from '@/components/organisms/HomePage/HomeView';
+import { HomeView } from '@/components/organisms/HomePage';
 
 const LandingPage: React.FC = ({}) => {
   return <HomeView />;
