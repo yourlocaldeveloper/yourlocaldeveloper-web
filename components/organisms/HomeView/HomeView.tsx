@@ -31,7 +31,7 @@ export const HomeView: React.FC = ({}) => {
             width={300}
             alt={'A wool version of me'}
           />
-          <div className={styles.blobOne}>
+          <div className={styles.blob}>
             <Image src={blob} width={500} alt={'A blob'} />
           </div>
         </div>

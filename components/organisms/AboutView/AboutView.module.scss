@@ -1,0 +1,100 @@
+@use '@/styles/breakpoints' as *;
+@use '@/styles/colors' as *;
+
+.aboutView {
+  background-color: $light-green;
+  height: calc(100vh - 50px);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+  }
+}
+
+.aboutViewContainer {
+  height: 100%;
+  max-width: $max-width;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.leftContainer,
+.rightContainer {
+  width: 50%;
+  padding: 0 12.5px;
+}
+
+.leftContainer {
+  color: $brown;
+  position: relative;
+  display: flex;
+
+  h1 {
+    top: -25px;
+    position: absolute;
+    left: 10px;
+    z-index: 4;
+  }
+}
+
+.rightContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  h6 {
+    margin-bottom: 10px;
+  }
+}
+
+.timeline {
+  border-left: 1px solid black;
+  list-style-type: none;
+  margin-left: 25px;
+  margin-top: 15px;
+
+  li {
+    position: relative;
+    margin-top: -15px;
+    margin-left: -15px;
+    margin-bottom: 15px;
+  }
+
+  li:before {
+    content: ' ';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $black;
+    position: absolute;
+    left: -33.5px;
+    top: 13px;
+    transform: translateY(-40%);
+  }
+}
+
+.timelineHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h6 {
+    margin-bottom: 0px;
+  }
+
+  span {
+    margin-left: auto;
+  }
+}
+
+.woolHouse {
+  z-index: 3;
+}
+
+.blob {
+  position: absolute;
+  z-index: 2;
+}

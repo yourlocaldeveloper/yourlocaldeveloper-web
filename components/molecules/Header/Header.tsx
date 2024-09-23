@@ -18,7 +18,7 @@ export const Header: React.FC = () => {
           <Heading as={'h6'}>Aaron Yates</Heading>
         </div>
         <div className={styles.buttons}>
-          <HeaderButton text={'About Me'} />
+          <HeaderButton text={'About Me'} link={'/about'} />
           <HeaderButton text={'Projects'} />
           <HeaderButton text={'Contact'} />
           <HeaderButton text={'My CV'} />
