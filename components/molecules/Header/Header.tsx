@@ -19,8 +19,8 @@ export const Header: React.FC = () => {
         </div>
         <div className={styles.buttons}>
           <HeaderButton text={'About Me'} link={'/about'} />
-          <HeaderButton text={'Projects'} />
-          <HeaderButton text={'Contact'} />
+          <HeaderButton text={'Projects'} link={'/project'} />
+          <HeaderButton text={'Contact'} link={'/contact'} />
           <HeaderButton text={'My CV'} />
         </div>
         <div className={styles.languageContainer}>
