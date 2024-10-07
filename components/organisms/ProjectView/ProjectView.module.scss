@@ -1,2 +1,42 @@
 @use '@/styles/breakpoints' as *;
 @use '@/styles/colors' as *;
+
+.projectView {
+  background-color: $light-green;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectViewContainer {
+  height: 100%;
+  max-width: $maxTabletWidth;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projectHeadings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 0;
+  width: 100vw;
+}
+
+.projectContainer {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(1, 1fr);
+  max-width: $maxTabletWidth;
+
+  @include for-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include for-desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

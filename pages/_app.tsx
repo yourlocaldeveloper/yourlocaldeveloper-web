@@ -1,6 +1,8 @@
 import type { AppProps } from 'next/app';
 import { Poppins } from 'next/font/google';
 
+// import { Header } from '@/components/molecules/Header';
+
 const poppins = Poppins({
   weight: ['200', '400', '600', '800'],
   style: ['normal', 'italic'],

@@ -19,14 +19,19 @@ export const Header: React.FC = () => {
         </div>
         <div className={styles.buttons}>
           <HeaderButton text={'About Me'} link={'/about'} />
-          <HeaderButton text={'Projects'} link={'/project'} />
-          <HeaderButton text={'Contact'} link={'/contact'} />
-          <HeaderButton text={'My CV'} />
+          <HeaderButton text={'Projects'} link={'/projects'} />
+          <HeaderButton
+            text={'My CV'}
+            link={
+              'https://drive.google.com/file/d/1MTbWUNQbnIXRXWgb0d8FKFiGNfn51Sye/view?usp=sharing'
+            }
+            isExternal
+          />
         </div>
         <div className={styles.languageContainer}>
           <select className={styles.languageSelector}>
-            <option value='EN'>EN</option>
-            <option value='LT'>LT</option>
+            <option value="EN">EN</option>
+            <option value="LT">LT</option>
           </select>
         </div>
       </div>

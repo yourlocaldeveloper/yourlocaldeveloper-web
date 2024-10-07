@@ -1,0 +1,35 @@
+@use '@/styles/breakpoints' as *;
+@use '@/styles/colors' as *;
+
+.projectTile {
+  background-color: $dark-green;
+  width: 320px;
+  transition: transform 0.3s ease;
+}
+
+.projectTile:hover {
+  transform: translateY(-10px);
+}
+
+.projectLogo {
+  background-color: $cream;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.projectInfo {
+  padding: 25px 25px;
+  min-height: 120px;
+}
+
+.projectHeader {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.projectLink {
+  font-size: 18px;
+}
