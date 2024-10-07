@@ -3,40 +3,56 @@
 
 .aboutView {
   background-color: $light-green;
-  height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 
   p {
+    font-size: 12px;
+
+    @include for-mobile-up {
+      font-size: 15px;
+    }
   }
 }
 
 .aboutViewContainer {
   height: 100%;
   max-width: $max-width;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+
+  @include for-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 .leftContainer,
 .rightContainer {
-  width: 50%;
   padding: 0 12.5px;
+  @include for-desktop {
+    width: 50%;
+  }
 }
 
 .leftContainer {
   color: $brown;
   position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h1 {
-    top: -25px;
-    position: absolute;
-    left: 10px;
-    z-index: 4;
+    justify-content: center;
+
+    @include for-desktop {
+      top: -25px;
+      position: absolute;
+      left: 10px;
+      z-index: 4;
+    }
   }
 }
 
@@ -44,9 +60,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 
   h6 {
     margin-bottom: 10px;
+  }
+
+  @include for-desktop {
+    margin-top: 0;
   }
 }
 
@@ -92,9 +113,51 @@
 
 .woolHouse {
   z-index: 3;
+  margin-top: 25px;
+  width: 200px;
+  height: auto;
+
+  @include for-mobile-up {
+    margin-top: 25px;
+    width: 300px;
+  }
+
+  @include for-desktop {
+    margin-top: 0;
+    width: 450px;
+  }
+}
+
+.blobContainer {
+  z-index: 2;
+  @include for-desktop {
+    top: 0;
+  }
 }
 
 .blob {
-  position: absolute;
   z-index: 2;
+  position: absolute;
+  top: calc(50% + 50px);
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+
+  @include for-mobile-up {
+    width: 300px;
+  }
+
+  @include for-desktop {
+    width: 450px;
+  }
+}
+
+.returnLink {
+  text-decoration: none;
+  color: $brown;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 25px 0;
 }

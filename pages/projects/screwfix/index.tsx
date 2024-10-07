@@ -1,12 +1,42 @@
 import React from 'react';
 
 import { SingleProjectView } from '@/components/organisms/SingleProjectView';
+import { Heading } from '@/components/atoms/Heading';
 
 import screwfix from '@/app/screwfix.png';
 
 const ScrewfixPage: React.FC = ({}) => {
   return (
-    <SingleProjectView bannerImage={screwfix} title={'Screwfix'}>
+    <SingleProjectView
+      bannerImage={screwfix}
+      summary={
+        'Screwfix is a leading UK-based retailer of tools, hardware, and building supplies. Screwfix.com is the online platform for them.'
+      }
+      liveLink={'https://www.screwfix.com/'}
+      title={'Screwfix'}
+      tags={[
+        'TypeScript',
+        'React',
+        'Next.JS',
+        'NodeJS',
+        'Jest',
+        'react-testing-library',
+        'SSR',
+        'SPA',
+        'Optimizely',
+        'Bloomreach CMS',
+      ]}
+    >
+      <Heading as="h3">About Screwfix</Heading>
+      Screwfix.com is the online platform for Screwfix, a leading UK-based
+      retailer of tools, hardware, and building supplies. The website offers a
+      vast range of products for both tradespeople and DIY enthusiasts,
+      including categories like power tools, plumbing supplies, electrical
+      components, construction materials, and general hardware.
+      <br />
+      Overall, the website complements Screwfix’s in-store experience by
+      offering convenience, speed, and access to a large inventory of products.
+      <Heading as="h3">What I was involved in:</Heading>
       This project involved replacing a legacy monolith system, a Web Commerce
       Platform, with a modern, micro front end architecture to improve
       performance, scalability, and flexibility. The transition included the

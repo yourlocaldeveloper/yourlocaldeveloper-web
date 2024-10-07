@@ -10,12 +10,15 @@ interface SingleProjectViewProps {
   bannerImage: StaticImageData;
   children: React.ReactNode;
   title: string;
+  githubLink?: string;
+  liveLink?: string;
   summary?: string;
   tags?: string[];
 }
 
 export const SingleProjectView: React.FC<SingleProjectViewProps> = (props) => {
-  const { bannerImage, children, summary, title, tags } = props;
+  const { bannerImage, children, githubLink, liveLink, summary, title, tags } =
+    props;
 
   const singleProjectTags = (
     <div className={styles.projectTags}>
@@ -33,8 +36,23 @@ export const SingleProjectView: React.FC<SingleProjectViewProps> = (props) => {
           <Heading as="h1">{title}</Heading>
           {summary}
           {singleProjectTags}
+          <div className={styles.summaryLinks}>
+            {githubLink && (
+              <a href={githubLink} target="_blank">
+                Github
+              </a>
+            )}
+            {liveLink && (
+              <a href={liveLink} target="_blank">
+                Live Link
+              </a>
+            )}
+          </div>
         </div>
         <div className={styles.childrenContainer}>{children}</div>
+        <a href="/projects" className={styles.returnLink}>
+          &#60; See Other Projects
+        </a>
       </div>
     </div>
   );

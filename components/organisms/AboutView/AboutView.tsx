@@ -18,11 +18,10 @@ export const AboutView: React.FC = ({}) => {
           <Image
             className={styles.woolHouse}
             src={woolHouse}
-            width={450}
             alt={'A wool house'}
           />
-          <div className={styles.blob}>
-            <Image src={blob} width={500} alt={'A blob'} />
+          <div className={styles.blobContainer}>
+            <Image className={styles.blob} src={blob} alt={'A blob'} />
           </div>
         </div>
         <div className={styles.rightContainer}>
@@ -37,48 +36,53 @@ export const AboutView: React.FC = ({}) => {
             plc. After my two year placement I joined them full time.
           </Heading>
           <Heading as={'h6'}>
-            Out of work, I am an avid skier <span>formally a instructor!</span>,
+            Out of work, I am an avid skier, <span>formally a instructor</span>,
             bit of a gamer and a curious traveler.
           </Heading>
           <Heading as={'h1'}>My Timeline</Heading>
           <ul className={styles.timeline}>
             <li>
               <div className={styles.timelineHeading}>
-                <Heading as={'h6'}>University of York</Heading>
+                <Heading as={'h4'}>University of York</Heading>
                 <span>2015-2019</span>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus est erat, ultrices nec ullamcorper sit amet, tempor
-                tempus odio. Sed ac nibh non leo feugiat efficitur ut ac ex.
-                Pellentesque eu mauris elit.
+                I attended the University of York in the UK where I undertook a
+                Computer Science degree. I developed an interest in Web
+                Development. From there I then joined Code First Girls as Lead
+                Instructor to teach basic development and web dev skills to
+                Women interested into getting into tech.
               </p>
             </li>
             <li>
               <div className={styles.timelineHeading}>
-                <Heading as={'h6'}>La Fosse Associates</Heading>
+                <Heading as={'h4'}>La Fosse Associates</Heading>
                 <span>2021-2023</span>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus est erat, ultrices nec ullamcorper sit amet, tempor
-                tempus odio. Sed ac nibh non leo feugiat efficitur ut ac ex.
-                Pellentesque eu mauris elit.
+                I joined La Fosse Associates as a Trainee Full-Stack Web
+                Developer. Over 3 months I built up my development skills.
+                It&apos;s here I decided I wanted to focus primarily on
+                Front-end Development. From there, I was placed with Kingfisher
+                plc as a Front-End developer.
               </p>
             </li>
             <li>
               <div className={styles.timelineHeading}>
-                <Heading as={'h6'}>Kingfisher plc</Heading>
+                <Heading as={'h4'}>Kingfisher plc</Heading>
                 <span>2021-PRESENT</span>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus est erat, ultrices nec ullamcorper sit amet, tempor
-                tempus odio. Sed ac nibh non leo feugiat efficitur ut ac ex.
-                Pellentesque eu mauris elit.
+                After my placement I joined Kingfisher permanently as a
+                Mid-Level Front-End Developer. I continued working on
+                Screwfix.com where we focused on performance, maintainence, 3rd
+                party tool integreation and feature rollouts.
               </p>
             </li>
           </ul>
+          <a href="/projects" className={styles.returnLink}>
+            See My Projects &#62;
+          </a>
         </div>
       </div>
     </div>

@@ -34,6 +34,9 @@ export const HomeView: React.FC = ({}) => {
               LinkedIn
             </a>
           </div>
+          <a href="/about" className={styles.aboutLink}>
+            Learn About Me &#62;
+          </a>
         </div>
         <div className={styles.rightContainer}>
           <Image

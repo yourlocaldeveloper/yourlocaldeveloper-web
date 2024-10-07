@@ -20,7 +20,6 @@
   width: 100%;
   max-width: $maxTabletWidth;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
 
@@ -43,12 +42,42 @@
 
 .summaryContainer {
   display: flex;
-  align-items: center;
   flex-direction: column;
   width: 100%;
   background-color: $dark-green;
+  padding: 25px;
+}
+
+.summaryLinks {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
 }
 
 .childrenContainer {
   margin-top: 25px;
+}
+
+.projectTags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.summaryLinks a,
+.returnLink {
+  text-decoration: none;
+  color: $brown;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.summaryLinks a {
+  color: $darker-green;
+  text-transform: uppercase;
+}
+
+.summaryLinks a:first-child {
+  margin-right: 10px;
 }
