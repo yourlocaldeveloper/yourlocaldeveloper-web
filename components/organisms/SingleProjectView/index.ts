@@ -1,0 +1,1 @@
+export { SingleProjectView } from './SingleProjectView';

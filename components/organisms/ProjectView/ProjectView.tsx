@@ -21,27 +21,55 @@ export const ProjectView: React.FC = ({}) => {
           <ProjectTile
             title={'Screwfix'}
             image={screwfixLogo}
+            isProjectLinkExternal={false}
             link={'https://www.screwfix.com/'}
             linkText={'screwfix.com'}
+            projectLabel={'Work'}
+            projectLink={'/projects/screwfix'}
+            tags={['TypeScript', 'React', 'Next.JS', 'Node.JS']}
           />
-          <ProjectTile title={'RFID Poker Table'} />
+          <ProjectTile
+            title={'RFID Poker Table'}
+            projectLabel={'Personal'}
+            isProjectLinkExternal={false}
+            projectLink={'/projects/rfid'}
+            tags={[
+              'TypeScript',
+              'React',
+              'React Native',
+              'Express',
+              'Socket.io',
+              'RFID Technology',
+              'OBS',
+            ]}
+          />
           <ProjectTile
             title={'yourlocaldev'}
             image={me}
             link={'#'}
             linkText={'yourlocaldev.com'}
+            projectLabel={'Personal'}
+            tags={['TypeScript', 'React', 'Next.JS']}
           />
           <ProjectTile
             title={'Trivia Duck'}
             image={triviaDuck}
+            isProjectLinkExternal={true}
             link={'https://trivia-duck.netlify.app/'}
             linkText={'trivia-duck.netlify.app'}
+            projectLabel={'Personal'}
+            projectLink={'https://github.com/cwesterduin/trivia-duck'}
+            tags={['JavaScript', 'React', 'Redux', 'Socket.io', 'MongoDB']}
           />
           <ProjectTile
             title={'Tipsy Treats'}
             image={tipsyTreats}
+            isProjectLinkExternal={true}
             link={'https://tipsy-treats.netlify.app/'}
             linkText={'tipsy-treats.netlify.app'}
+            projectLabel={'Personal'}
+            projectLink={'https://github.com/yourlocaldeveloper/tipsy_treats'}
+            tags={['JavaScript', 'React', 'Restful APIs']}
           />
         </div>
       </div>

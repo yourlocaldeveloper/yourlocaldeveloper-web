@@ -2,6 +2,7 @@
 @use '@/styles/colors' as *;
 
 .projectTile {
+  position: relative;
   background-color: $dark-green;
   width: 320px;
   transition: transform 0.3s ease;
@@ -32,4 +33,34 @@
 
 .projectLink {
   font-size: 18px;
+
+  a {
+    color: $darker-green;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: $darker-green;
+    text-decoration: none;
+  }
+}
+
+.projectTags {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.projectLabelContainer {
+  position: absolute;
+  display: block;
+  left: 10px;
+  top: 5px;
+}
+
+.projectLinkSvg {
+  position: absolute;
+  display: block;
+  right: 10px;
+  top: 5px;
 }

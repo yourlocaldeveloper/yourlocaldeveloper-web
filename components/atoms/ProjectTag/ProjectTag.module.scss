@@ -1,0 +1,12 @@
+@use '@/styles/breakpoints' as *;
+@use '@/styles/colors' as *;
+
+.projectTag {
+  background-color: $light-green;
+  border-radius: 10px;
+  color: $black;
+  font-size: 15px;
+  height: 30px;
+  margin: 5px 5px 0 0;
+  padding: 5px;
+}
