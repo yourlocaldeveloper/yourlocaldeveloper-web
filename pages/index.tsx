@@ -4,7 +4,7 @@ import { HomeView } from '@/components/organisms/HomeView';
 import { ComingSoonView } from '@/components/organisms/ComingSoonView';
 
 const LandingPage: React.FC = () => {
-  const isWebsiteLive = false;
+  const isWebsiteLive = true;
 
   return isWebsiteLive ? <HomeView /> : <ComingSoonView />;
 };

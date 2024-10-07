@@ -7,6 +7,23 @@
   justify-content: center;
   width: 100vw;
   height: 50px;
+  padding: 0 25px;
+
+  @include for-max-width {
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+
+  a:hover,
+  a:focus,
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .headerContainer {
@@ -19,9 +36,13 @@
 }
 
 .logoContainer {
-  display: flex;
-  align-items: center;
+  display: none;
   height: 50px;
+
+  @include for-tablet-up {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .logo {
@@ -33,11 +54,21 @@
 .buttons {
   display: flex;
   align-items: center;
+
+  @include for-mobile {
+    width: 100vw;
+    justify-content: center;
+  }
 }
 
 .languageContainer {
+  display: none;
   padding-left: 25px;
   border-left: 1px solid $black;
+
+  @include for-tablet-up {
+    display: block;
+  }
 }
 
 .languageSelector {

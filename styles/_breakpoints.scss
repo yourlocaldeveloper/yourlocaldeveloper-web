@@ -18,6 +18,12 @@ $minDesktopWidth: 1025px;
   }
 }
 
+@mixin for-mobile-up {
+  @media (min-width: $minMobileWidth) {
+    @content;
+  }
+}
+
 @mixin for-tablet {
   @media (min-width: $minTabletWidth) and (max-width: $maxTabletWidth) {
     @content;
@@ -38,6 +44,12 @@ $minDesktopWidth: 1025px;
 
 @mixin for-desktop {
   @media (min-width: $minDesktopWidth) {
+    @content;
+  }
+}
+
+@mixin for-max-width {
+  @media (min-width: $max-width) {
     @content;
   }
 }

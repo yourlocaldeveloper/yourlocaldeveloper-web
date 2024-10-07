@@ -23,6 +23,17 @@ export const HomeView: React.FC = ({}) => {
             web applications. Committed to continuous learning and staying
             updated with the latest technologies.
           </Heading>
+          <div className={styles.homeLinks}>
+            <a href="https://github.com/yourlocaldeveloper" target={'_blank'}>
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/aaron-yates-uk/"
+              target={'_blank'}
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
         <div className={styles.rightContainer}>
           <Image

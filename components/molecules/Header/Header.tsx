@@ -11,14 +11,14 @@ export const Header: React.FC = () => {
   return (
     <div className={styles.header}>
       <div className={styles.headerContainer}>
-        <div className={styles.logoContainer}>
+        <a className={styles.logoContainer} href={'/'}>
           <div className={styles.logo}>
-            <Image src={woolHead} alt={'Little wool head'}></Image>
+            <Image src={woolHead} alt={'Little wool head'} />
           </div>
           <Heading as={'h6'}>Aaron Yates</Heading>
-        </div>
+        </a>
         <div className={styles.buttons}>
-          <HeaderButton text={'About Me'} link={'/about'} />
+          <HeaderButton text={'About Me'} />
           <HeaderButton text={'Projects'} link={'/projects'} />
           <HeaderButton
             text={'My CV'}

@@ -8,6 +8,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 25px 25px 0 25px;
+  overflow: hidden;
+
+  @include for-mobile-up {
+    padding: 0 25px;
+  }
+
+  @include for-max-width {
+    padding: 0;
+  }
 }
 
 .homeViewContainer {
@@ -16,12 +26,54 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: column;
+
+  @include for-desktop {
+    flex-direction: row;
+  }
+}
+
+.homeLinks {
+  margin-bottom: 10px;
+  @include for-mobile-up {
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
+  a {
+    border-right: 1px solid $black;
+    color: $brown;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding-right: 10px;
+    transition: transform 0.3s ease;
+
+    @include for-mobile-up {
+      font-size: 25px;
+    }
+
+    :hover,
+    :focus {
+      transform: scale(1.1);
+    }
+  }
+
+  a:last-child {
+    border-right: none;
+    padding-left: 10px;
+    padding-right: 0;
+  }
 }
 
 .leftContainer,
 .rightContainer {
-  width: 50%;
+  width: 100%;
   padding: 0 12.5px;
+
+  @include for-desktop {
+    width: 50%;
+  }
 }
 
 .rightContainer {
@@ -31,7 +83,7 @@
 }
 
 .highlight {
-  color: $brown;
+  color: $darker-green;
   font-weight: 600;
 }
 

@@ -4,4 +4,10 @@
   align-items: center;
   height: 32px;
   width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.headerButton:hover,
+.headerButton:focus {
+  transform: scale(1.1);
 }
