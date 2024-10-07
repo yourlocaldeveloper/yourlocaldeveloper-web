@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Heading } from '@/components/atoms/Heading';
 
@@ -24,19 +25,22 @@ export const HomeView: React.FC = ({}) => {
             updated with the latest technologies.
           </Heading>
           <div className={styles.homeLinks}>
-            <a href="https://github.com/yourlocaldeveloper" target={'_blank'}>
+            <Link
+              href="https://github.com/yourlocaldeveloper"
+              target={'_blank'}
+            >
               GitHub
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/aaron-yates-uk/"
               target={'_blank'}
             >
               LinkedIn
-            </a>
+            </Link>
           </div>
-          <a href="/about" className={styles.aboutLink}>
+          <Link href="/about" className={styles.aboutLink}>
             Learn About Me &#62;
-          </a>
+          </Link>
         </div>
         <div className={styles.rightContainer}>
           <Image

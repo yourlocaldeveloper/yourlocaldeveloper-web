@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Heading } from '@/components/atoms/Heading';
 
@@ -80,9 +81,9 @@ export const AboutView: React.FC = ({}) => {
               </p>
             </li>
           </ul>
-          <a href="/projects" className={styles.returnLink}>
+          <Link href="/projects" className={styles.returnLink}>
             See My Projects &#62;
-          </a>
+          </Link>
         </div>
       </div>
     </div>

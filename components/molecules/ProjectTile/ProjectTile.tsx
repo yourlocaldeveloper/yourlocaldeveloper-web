@@ -1,5 +1,6 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 
 import styles from './ProjectTile.module.scss';
 import { ProjectTag } from '@/components/atoms/ProjectTag';
@@ -36,15 +37,18 @@ export const ProjectTile: React.FC<ProjectTile> = (props) => {
 
   return (
     <div className={styles.projectTile}>
-      <a href={projectLink} className={styles.projectLogo}>
+      <Link href={projectLink || '#'} className={styles.projectLogo}>
         {image && <Image src={image} alt={title} width={200} />}
-      </a>
+      </Link>
       <div className={styles.projectInfo}>
         <div className={styles.projectHeader}>{title}</div>
         <div className={styles.projectLink}>
-          <a href={link} target={isProjectLinkExternal ? '_blank' : '_self'}>
+          <Link
+            href={link || '#'}
+            target={isProjectLinkExternal ? '_blank' : '_self'}
+          >
             {linkText}
-          </a>
+          </Link>
         </div>
         {projectTags}
         {projectLabel && (

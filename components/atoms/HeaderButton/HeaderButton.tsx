@@ -1,5 +1,6 @@
 import React from 'react';
 import cn from 'classnames';
+import Link from 'next/link';
 
 import styles from './HeaderButton.module.scss';
 
@@ -14,12 +15,12 @@ export const HeaderButton: React.FC<HeaderButton> = (props) => {
   const { text, link, isExternal, isSelected } = props;
 
   return (
-    <a
+    <Link
       className={cn(styles.headerButton, { [styles.selected]: isSelected })}
-      href={link}
+      href={link || '#'}
       target={isExternal ? '_blank' : '_self'}
     >
       {text}
-    </a>
+    </Link>
   );
 };

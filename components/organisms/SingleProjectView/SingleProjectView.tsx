@@ -1,5 +1,6 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 
 import { ProjectTag } from '@/components/atoms/ProjectTag';
 
@@ -38,21 +39,21 @@ export const SingleProjectView: React.FC<SingleProjectViewProps> = (props) => {
           {singleProjectTags}
           <div className={styles.summaryLinks}>
             {githubLink && (
-              <a href={githubLink} target="_blank">
+              <Link href={githubLink} target="_blank">
                 Github
-              </a>
+              </Link>
             )}
             {liveLink && (
-              <a href={liveLink} target="_blank">
+              <Link href={liveLink} target="_blank">
                 Live Link
-              </a>
+              </Link>
             )}
           </div>
         </div>
         <div className={styles.childrenContainer}>{children}</div>
-        <a href="/projects" className={styles.returnLink}>
+        <Link href="/projects" className={styles.returnLink}>
           &#60; See Other Projects
-        </a>
+        </Link>
       </div>
     </div>
   );

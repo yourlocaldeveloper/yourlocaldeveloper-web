@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Heading } from '@/components/atoms/Heading';
 import { HeaderButton } from '@/components/atoms/HeaderButton';
@@ -11,12 +12,12 @@ export const Header: React.FC = () => {
   return (
     <div className={styles.header}>
       <div className={styles.headerContainer}>
-        <a className={styles.logoContainer} href={'/'}>
+        <Link className={styles.logoContainer} href={'/'}>
           <div className={styles.logo}>
             <Image src={woolHead} alt={'Little wool head'} />
           </div>
           <Heading as={'h6'}>Aaron Yates</Heading>
-        </a>
+        </Link>
         <div className={styles.buttons}>
           <HeaderButton text={'About Me'} link={'/about'} />
           <HeaderButton text={'Projects'} link={'/projects'} />
