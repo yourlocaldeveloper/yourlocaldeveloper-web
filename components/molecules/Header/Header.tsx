@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
           <HeaderButton
             text={'My CV'}
             link={
-              'https://drive.google.com/file/d/1MTbWUNQbnIXRXWgb0d8FKFiGNfn51Sye/view?usp=sharing'
+              'https://drive.google.com/file/d/1h9bJwBl4zXlPaPzARg6bnjDsKMYsPsSB/view?usp=sharing'
             }
             isExternal
           />

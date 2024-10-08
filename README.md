@@ -1,4 +1,4 @@
-[yourlocaldev](https://www.yourlocaldev.com/) is my personal website. It's a Next.js [Next.js](https://nextjs.org) project.
+[yourlocaldev](https://www.yourlocaldev.com/) is my personal website. It's a [Next.js](https://nextjs.org) project.
 
 ## Getting Started
 

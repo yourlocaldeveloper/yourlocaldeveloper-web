@@ -37,16 +37,17 @@ export const ProjectTile: React.FC<ProjectTile> = (props) => {
 
   return (
     <div className={styles.projectTile}>
-      <Link href={projectLink || '#'} className={styles.projectLogo}>
+      <Link
+        href={projectLink || '#'}
+        target={isProjectLinkExternal ? '_blank' : '_self'}
+        className={styles.projectLogo}
+      >
         {image && <Image src={image} alt={title} width={200} />}
       </Link>
       <div className={styles.projectInfo}>
         <div className={styles.projectHeader}>{title}</div>
         <div className={styles.projectLink}>
-          <Link
-            href={link || '#'}
-            target={isProjectLinkExternal ? '_blank' : '_self'}
-          >
+          <Link href={link || '#'} target={'_blank'}>
             {linkText}
           </Link>
         </div>

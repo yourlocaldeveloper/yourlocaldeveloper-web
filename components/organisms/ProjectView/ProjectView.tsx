@@ -46,9 +46,13 @@ export const ProjectView: React.FC = ({}) => {
           <ProjectTile
             title={'yourlocaldev'}
             image={me}
+            isProjectLinkExternal={true}
             link={'#'}
             linkText={'yourlocaldev.com'}
             projectLabel={'Personal'}
+            projectLink={
+              'https://github.com/yourlocaldeveloper/yourlocaldeveloper-web'
+            }
             tags={['TypeScript', 'React', 'Next.JS']}
           />
           <ProjectTile
